@@ -129,4 +129,5 @@ For support, please:
 
 ---
 
-Made with ❤️ by [Your Name] 
+
+Made with ❤️ by Emad Uddin 
