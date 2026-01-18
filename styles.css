@@ -1,0 +1,45 @@
+/* Additional styles for the extension */
+#youtube-assistant-button {
+  transition: background-color 0.3s ease;
+}
+
+#youtube-assistant-button:hover {
+  background-color: #cc0000 !important;
+}
+
+/* Ensure the button stays visible */
+#youtube-assistant-button {
+  position: fixed !important;
+  z-index: 999999 !important;
+}
+
+/* Style for the popup container */
+.youtube-assistant-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999999;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Loading spinner */
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #ff0000;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 

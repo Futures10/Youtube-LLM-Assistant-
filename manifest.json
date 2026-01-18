@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Video Assistant",
+  "version": "1.0",
+  "description": "Ask questions about YouTube videos and get AI-powered answers",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

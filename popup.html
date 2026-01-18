@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Assistant</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    #transcript {
+      max-height: 200px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #questionInput {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #askButton {
+      width: 100%;
+      padding: 8px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #askButton:hover {
+      background-color: #3367d6;
+    }
+    #answer {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div id="transcript"></div>
+  <input type="text" id="questionInput" placeholder="Ask a question about the video...">
+  <button id="askButton">Ask Question</button>
+  <div id="answer"></div>
+  <script src="popup.js"></script>
+</body>
+</html> 
